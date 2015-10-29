@@ -9,7 +9,11 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<<<<<<< HEAD
 
+=======
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+>>>>>>> fbda1a155187c32175d9b0d2310a250a8904f65b
   <?php wp_head(); ?>
 </head>
 

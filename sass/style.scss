@@ -1,10 +1,19 @@
 /*
+<<<<<<< HEAD
 * Theme Name: HackerYou Starter Theme
 * Theme URI: http://hackeryou.com;
 * Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
 * Version: 1.0
 * Author: HackerYou
 * Author URI: http://hackeryou.com
+=======
+* Theme Name: HandCrafted 
+* Theme URI: 
+* Description: An e-commerce theme that creates a stunning site for your small-business
+* Version: 1.0
+* Author: Tom Haxell & Tiffany Nogueira
+* Author URI: http://tomhaxell.com & http://tiffanydanielle.ca
+>>>>>>> fbda1a155187c32175d9b0d2310a250a8904f65b
 */
 
 @import 'normalize';
@@ -24,7 +33,38 @@ img {
 }
 
 body {
-	color: #333;
+
+	color: black;
+	background-color: white;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.3rem;
 }
 
 .container {
@@ -49,3 +89,58 @@ body {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+// FOOTER STYLING 
+
+footer {
+	border: 1px solid #FF00FF;
+	p {
+		margin: 0;
+		font-size: 1rem;
+	}
+	div.ftop {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100px;
+	}
+	div.fbottom {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+		border: 1px solid #FF00FF;
+		width: 100%;
+		div.created {
+			width: 50%;
+		}	
+		div.socialicons {
+			width: 50%;
+			text-align: right;
+		}
+	}
+	div.pink {
+		border: 1px solid #FF00FF;
+		height: 100px;
+	}
+}
+
+
+
+
+
+
+
+
+>>>>>>> fbda1a155187c32175d9b0d2310a250a8904f65b

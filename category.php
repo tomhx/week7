@@ -5,8 +5,9 @@
     <div class="content">
 
       <h1>Category Archives: <?php single_cat_title(); ?></h1>
-    	<p>This is category page</p>
-      <?php
+
+    	<?php
+
     		$category_description = category_description();
     		if ( ! empty( $category_description ) )
     			echo '' . $category_description . '';
