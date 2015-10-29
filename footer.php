@@ -1,7 +1,23 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="ftop">
+
+  	<div class="weare pink"></div>
+  	<div class="subscribe pink "></div>
+  	<div class="instagram pink"></div>
+
   </div>
+  <div class="fbottom">
+  	<div class="created">
+  		<p>Created & designed by Tom Haxell and Tiffany Nogueira</p>
+  	</div>
+  	<div class="socialicons">
+  		<i class="fa fa-twitter-square"></i>
+  		<i class="fa fa-facebook-square"></i>
+  		<i class="fa fa-instagram"></i>
+  	</div>
+  </div>
+
+
 </footer>
 
 <script>
