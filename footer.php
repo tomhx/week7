@@ -2,19 +2,30 @@
 
   <div class="ftop">
 
-  	<div class="weare pink"></div>
-  	<div class="subscribe pink "></div>
-  	<div class="instagram pink"></div>
+  	<div class="weare pink">
+
+  		<img src="<?php the_field('logo'); ?>">	
+
+  		<p><?php the_field('motto'); ?></p>
+
+  	</div>
+
+  	<div class="subscribe pink ">
+  		<?php es_subbox( $namefield = "YES", $desc = "", $group = "" ); ?>
+  	</div>
+  	<div class="instagram pink">
+  		<p><?php the_field('company_address'); ?></p>
+  	</div>
 
   </div>
   <div class="fbottom">
   	<div class="created">
-  		<p>Created & designed by Tom Haxell and Tiffany Danielle</p>
+  		<p>Created & designed by <a href="http://www.tomhaxell.com">Tom Haxell</a> and <a href="http://.tiffanydanielle.ca">Tiffany Nogueira</a></p>
   	</div>
   	<div class="socialicons">
-  		<i class="fa fa-twitter-square"></i>
-  		<i class="fa fa-facebook-square"></i>
-  		<i class="fa fa-instagram"></i>
+  		<a href="<?php the_field('twitter_url'); ?>"><i class="fa fa-twitter-square"></i></a>
+  		<a href=" <?php the_field('facebook_url'); ?>"><i class="fa fa-facebook-square"></i></a>
+  		<a href=" <?php the_field('instagram_url'); ?>"><i class="fa fa-instagram"></i></a>
   	</div>
   </div>
 

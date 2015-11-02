@@ -28,7 +28,11 @@ Default Styling
 ====================================
 */
 
+
+// Colour Design
+
 $green: #073F45;
+// Green created by Podesta with the color name All Hallows Eve
 $grey: #696969;
 $white: #ffffff;
 
@@ -84,14 +88,68 @@ p {
 }
 
 .content {
-	float: left;
-	width: 65%;
 	margin-right: 5%;
+	width: 85%;
+	a {
+		font-size: 6rem;
+		color: $green;
+		font-family: "Quattrocento Sans", Sans-serif;
+	}
+	h2 {
+		color: $green;
+		letter-spacing: 3px;
+		margin-top: 4rem;
+	}
+	img {
+		border-radius: 10px;
+		width: 80%;
+		height: 70%;
+		padding: 5px 0; 
+	}
+	p {
+		font-family: "Quattrocento Sans", Sans-serif;
+		font-size: 1.5rem;
+		padding-top: 10px;
+	}
+}
+
+.wp-caption-text {
+	padding-bottom: 20px;
+	font-style: italic;
+	width: 80%;
+	text-align: center;
 }
 
 .full {
 	width: 100%;
 }
+
+.catoclass {
+	text-align: left;
+	border: none;
+	display: flex;
+	flex-wrap: wrap;
+	& > * {
+		width: 33.33%;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	a {
+		font-size: 1.2rem;	
+	}
+}
+
+section.entry-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	& > * {
+		width: 70%;	
+	}
+	figure{
+		width: 150px;
+	}
 
 // HEADER STYLING 
 
@@ -165,6 +223,7 @@ section.about {
 
 // FEATURED PRODUCTS SECTION
 
+
 section.featured {
 	background-color: white;
 	color: black;
@@ -184,36 +243,3 @@ section.featured {
 }
 
 
-// FOOTER STYLING 
-
-footer {
-	border: 1px solid #FF00FF;
-	p {
-		margin: 0;
-		font-size: 1rem;
-	}
-	div.ftop {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100px;
-	}
-	div.fbottom {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 10px;
-		border: 1px solid #FF00FF;
-		width: 100%;
-		div.created {
-			width: 50%;
-		}	
-		div.socialicons {
-			width: 50%;
-			text-align: right;
-		}
-	}
-	div.pink {
-		border: 1px solid #FF00FF;
-		height: 100px;
-	}
-}

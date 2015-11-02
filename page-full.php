@@ -1,8 +1,3 @@
-<?php
-
-/*
-	Template Name: Full Page, No Sidebar
-*/
 
 get_header();  ?>
 
@@ -38,5 +33,3 @@ get_header();  ?>
 		
 	</div>
 </section>
-
-<?php get_footer(); ?>

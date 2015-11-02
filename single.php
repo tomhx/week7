@@ -21,11 +21,11 @@
             )); ?>
           </div><!-- .entry-content -->
 
-          <div class="entry-utility">
+         <!--  <div class="entry-utility">
             <?php hackeryou_posted_in(); ?>
             <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-utility -->
-        </div><!-- #post-## -->
+        </div><!-- #post-## --> -->
 
         <div id="nav-below" class="navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>

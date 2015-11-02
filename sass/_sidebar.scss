@@ -1,6 +1,60 @@
+$green: #073F45;
+// Green created by Podesta with the color name All Hallows Eve
+$grey: #696969;
+$white: #ffffff;
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: black;
+	background-color: white;
+	font-family: "Quattrocento Sans", Sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 6rem;
+	font-family: "Roboto Slab", Serif;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
 .sidebar {
-	width: 30%;
-	float: left;
+	width: 15%;
+	background: $grey;
+	color: white;
+	text-align: center;
+	h3 {
+		text-decoration: underline;
+		padding: 5px;
+	}
+	a {
+		color: white;
+	}
 	ul {
 		margin: 0;
 		padding: 0;
