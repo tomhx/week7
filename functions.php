@@ -272,6 +272,7 @@ function get_post_parent($post) {
 
 // WooCommerce
 
+
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
@@ -304,15 +305,10 @@ if ( is_singular( 'product' ) ) {
 };
 
 
-
-
 // Add class to each a inside li item in the menu (Navigation)
 add_filter('nav_menu_link_attributes', 'addLinkClass', 10, 2);
 function addLinkClass($attrs) {
 	$attrs['class']= 'hvr_underline_from_left';
 	return $attrs;
 }
-
-
-
 
