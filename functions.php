@@ -227,6 +227,7 @@ endif;
 
 /* Get rid of junk! - Gets rid of all the crap in the header that you dont need */
 
+
 function clean_shit_up() {
 	// windows live
 	remove_action('wp_head', 'rsd_link');
@@ -238,7 +239,9 @@ function clean_shit_up() {
 	remove_action( 'wp_head', 'feed_links', 3 );
 }
 
+
 add_action('init', 'clean_shit_up');
+
 
 
 /* Here are some utility helper functions for use in your templates! */
@@ -267,7 +270,13 @@ function get_post_parent($post) {
 	}
 }
 
+<<<<<<< HEAD
 // THIS IS WOOCOMMERCE CODE FOR ACTIVATION
+=======
+
+
+// WooCommerce
+>>>>>>> a853fcc2c90f0503696444e883323e74b56fc1f9
 
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
@@ -283,8 +292,35 @@ function my_theme_wrapper_end() {
   echo '</section>';
 }
 
+<<<<<<< HEAD
 
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
+=======
+function woocommerce_fix() {
+
+if ( is_singular( 'product' ) ) {
+	woocommerce_content();
+} else{
+//For ANY product archive.
+//Product taxonomy, product search or /shop landing
+	woocommerce_get_template( 'archive-product.php' );
+	}
+};
+
+
+
+
+// Add class to each a inside li item in the menu (Navigation)
+add_filter('nav_menu_link_attributes', 'addLinkClass', 10, 2);
+function addLinkClass($attrs) {
+	$attrs['class']= 'hvr_underline_from_left';
+	return $attrs;
+}
+
+
+
+
+>>>>>>> a853fcc2c90f0503696444e883323e74b56fc1f9

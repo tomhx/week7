@@ -1,8 +1,10 @@
 a {
-	color: #BA209B;
 	text-decoration: none;
+	color: white;
+	text-shadow: 0 0 5px black;
 	&:hover {
-		color: #D424B1;
+		color: black;
+		text-shadow: 0 0 7px white;
 	}
 }
 
