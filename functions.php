@@ -270,13 +270,10 @@ function get_post_parent($post) {
 	}
 }
 
-<<<<<<< HEAD
-// THIS IS WOOCOMMERCE CODE FOR ACTIVATION
-=======
 
 
 // WooCommerce
->>>>>>> a853fcc2c90f0503696444e883323e74b56fc1f9
+
 
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
@@ -292,7 +289,6 @@ function my_theme_wrapper_end() {
   echo '</section>';
 }
 
-<<<<<<< HEAD
 
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
@@ -311,8 +307,6 @@ if ( is_singular( 'product' ) ) {
 };
 
 
-
-
 // Add class to each a inside li item in the menu (Navigation)
 add_filter('nav_menu_link_attributes', 'addLinkClass', 10, 2);
 function addLinkClass($attrs) {
@@ -321,6 +315,3 @@ function addLinkClass($attrs) {
 }
 
 
-
-
->>>>>>> a853fcc2c90f0503696444e883323e74b56fc1f9
