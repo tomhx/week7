@@ -1,6 +1,6 @@
 /*
 <<<<<<< HEAD
-* Theme Name: HackerYou Starter Theme
+* Theme Name: Handcrafted Theme by Tom and Tiff
 * Theme URI: http://hackeryou.com;
 * Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
 * Version: 1.0
@@ -28,14 +28,18 @@ Default Styling
 ====================================
 */
 
+$green: #073F45;
+$grey: #696969;
+$white: #ffffff;
+
 img {
 	max-width: 100%;
 }
 
 body {
-
-	color: black;
+	color: $grey;
 	background-color: white;
+	font-family: "Quattrocento Sans", sans-serif;
 }
 
 html {
@@ -48,11 +52,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-	font-size: 6rem;
+	font-size: 4.8rem;
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	a {
+	padding-right: 50px;
+	}
 }
 
 h2 {
 	font-size: 4rem;
+	font-weight: 100;
+	color: $white;
 }
 
 h3 {
@@ -68,7 +79,7 @@ p {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 75%;
 	margin: 0 auto;
 }
 
@@ -82,24 +93,95 @@ p {
 	width: 100%;
 }
 
+// HEADER STYLING 
 
+header.header {
+	background-image: url(forest3.jpg);
+	background-size: cover;
+	height: 100vh;
+}
 
+header.hero {
+	padding: 7% 0 0 0;
+}
 
+header.main {
+	background-color: rgba(255,255,255, 0.3);
+	height: 15vh;
+}
 
+div.topnav {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	.logo {
+		width: 10%;
+	}
+}
 
+.feature {
+	border: 4px solid white;
+	margin: 0 auto 0;
+	width: 32%;
+	height: 50vh;
+}
 
+.outside {
+	border: 2px solid white;
+	margin: 0 auto;
+	// width: 105%;
+	height: 50vh;
+	position: relative;
+	top: 30px;
+	right: -30px;
+	h2 {
+		padding: 20% 12% 0 8%;
+		text-align: center;
+		font-size: 5rem;
+		text-shadow: 0 0 10px black;
+	}
+}
 
-<<<<<<< HEAD
-=======
+// ABOUT SECTION 
 
+section.about {
+	height: 30vh;
+	background-color: $grey;
+	color: white;
+	text-align: center;
+	h2 {
+		padding: 5% 0 3%;
+		text-transform: uppercase;
+		font-weight: 200;
+		letter-spacing: 3px;
+	}
+	p {
+		font-size: 1.8rem;
+		font-weight: 200;
+	}
+}
 
+// FEATURED PRODUCTS SECTION
 
-
-
-
-
-
-
+section.featured {
+	background-color: white;
+	color: black;
+	padding: 5% 0;
+	h2 {
+		color: $grey;
+		text-align: center;
+		padding: 3% 0 5%;
+		text-transform: uppercase;
+		font-weight: 200;
+		letter-spacing: 3px;
+	}
+	.photo {
+		width: 50%;
+		float: left;
+	}
+}
 
 
 // FOOTER STYLING 
@@ -135,12 +217,3 @@ footer {
 		height: 100px;
 	}
 }
-
-
-
-
-
-
-
-
->>>>>>> fbda1a155187c32175d9b0d2310a250a8904f65b

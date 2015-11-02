@@ -6,7 +6,7 @@
 
 get_header();  ?>
 
-<div class="main">
+<!-- <div class="main">
   <div class="container">
 
 
@@ -18,6 +18,25 @@ get_header();  ?>
 
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
-</div> <!-- /.main -->
+<!-- </div>  --><!-- /.main --> 
+
+    <section class='about'>
+      <h2><?php the_field('headline'); ?></h2>
+      <p> the_field('about_us'); </p>
+    </section> <!-- /about -->
+
+<!-- FEATURED PRODUCTS SECTION -->
+
+<section class='featured'>
+	<div class="container">
+		<div class="left">
+			<img src="  " alt="">
+		</div>
+		<div class="right">
+			<img src="  " alt="">
+		</div>
+		
+	</div>
+</section>
 
 <?php get_footer(); ?>
