@@ -1,6 +1,10 @@
-var gulp   = require('gulp'),
+var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		autoprefixer = require('gulp-autoprefixer'),
+		concat = require('gulp-concat');
+
+gulp.task('default', ['styles', 'watch']);
+
 		concat = require('gulp-concat'),
 		browserSync = require('browser-sync'),
 		reload = browserSync.reload;
@@ -21,6 +25,7 @@ gulp.task('styles', function() {
 		}))
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('.'))
+		.pipe(gulp.dest('.'))
 		.pipe(reload({ stream: true }));
 });
 
@@ -28,4 +33,5 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
 	gulp.watch('sass/**/*.scss', ['styles']);
 	gulp.watch('**/*.php', reload);
+
 });

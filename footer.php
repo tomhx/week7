@@ -1,4 +1,5 @@
 <footer>
+
   <div class="ftop">
 
   	<div class="weare pink"></div>
@@ -8,7 +9,7 @@
   </div>
   <div class="fbottom">
   	<div class="created">
-  		<p>Created & designed by Tom Haxell and Tiffany Nogueira</p>
+  		<p>Created & designed by Tom Haxell and Tiffany Danielle</p>
   	</div>
   	<div class="socialicons">
   		<i class="fa fa-twitter-square"></i>
@@ -17,10 +18,10 @@
   	</div>
   </div>
 
-
 </footer>
 
 <script>
+
 /* Google Analytics! */
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
