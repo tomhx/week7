@@ -1,3 +1,138 @@
-footer {
-	clear: both;
+$green: #073F45;
+// Green created by Podesta with the color name All Hallows Eve
+$grey: #696969;
+$white: #ffffff;
+
+img {
+	max-width: 100%;
 }
+
+body {
+	color: black;
+	background-color: white;
+	font-family: "Quattrocento Sans", Sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 6rem;
+	font-family: "Roboto Slab", Serif;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+footer {
+	border: 1px solid #FF00FF;
+	p {
+		margin: 0;
+		font-size: 1rem;
+	}
+	div.ftop {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		background: $grey;
+		color: $white;
+		& > * {
+			width: 33.33%;
+		}
+		div.weare {
+			text-align: center;	
+			padding: 25px;
+			font-style: italic;
+			p {
+				padding-top: 5px;
+			}
+			img {
+				width: 10%;
+				height: 15%;
+			}
+		}
+		div.instagram {
+			text-align: right;
+			padding: 25px;
+			font-size: 2rem;
+		}
+
+	}
+	div.fbottom {
+		display: flex;
+		background: black;
+		color: $grey;
+		flex-wrap: wrap;
+		padding: 10px;
+		border: 1px solid #FF00FF;
+		width: 100%;
+		div.created {
+			width: 50%;
+			padding-top: 5px;
+			a {
+				color: $grey;
+			}
+			a:visited {
+				color: $grey;
+			}
+		}	
+		div.socialicons {
+			width: 50%;
+			text-align: right;
+			a {
+				color: $grey;
+			}
+			a:visited {
+				color: $grey;
+			}
+			i {
+				font-size: 2.5rem;
+				padding: 0 20px;
+			}
+			i:hover {
+				color: $white;
+			}
+		}
+	}
+	div.pink {
+		border: 1px solid #FF00FF;
+	}
+	div.subscribe {
+		text-align: center;
+	}
+	div.es_labelbox {
+	color: red;
+	background: yellow;
+	}
+	
+}
+
+
+
+.es_textbox {
+
+}
+
+.es_button {
+
+}
+

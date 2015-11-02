@@ -19,3 +19,6 @@
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
+
+
+<?php the_field('blog'); ?>
